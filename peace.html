@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apple's Scents</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wa-navbar">
+  <div class="wa-topbar">
+    <div class="wa-title">Apple Scents</div>
+    <div class="wa-icons">
+      <!-- Search -->
+      <a href="apple.html" class="btn">next page ></a>
+      <!-- More -->
+    </div>
+  </div>
+
+  <div class="wa-tabs">
+    <div class="wa-tab active">Perfumes</div>
+  </div>
+</div>
+  <header>
+    <h1>Apple's Scents 🍎💧</h1>
+  </header>
+
+  <main id="product-container" class="container">
+    <!-- Products will be loaded here by JavaScript -->
+  </main>
+
+  <a href="https://wa.me/2348162614919" class="floating-wa" target="_blank" aria-label="Chat on WhatsApp">
+    <svg fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.296-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.89 11.89 0 0020.885 3.488"/>
+    </svg>
+  </a>
+
+  <footer>
+    <div class="footer-content">
+      <h3>Get in Touch</h3>
+      <p>Questions or bulk orders? Chat with us directly on WhatsApp</p>
+      <a href="https://wa.me/2348162614919" class="whatsapp-link" target="_blank">
+        Chat on WhatsApp: 0816 261 4919
+      </a>
+      <p class="copyright">© 2026 Apple's Scents. All rights reserved.</p>
+    </div>
+  </footer>
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .wa-navbar {
+    background: #075e54;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .wa-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+  }
+
+  .wa-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .wa-icons {
+    display: flex;
+    gap: 24px;
+  }
+
+  .wa-icons svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    cursor: pointer;
+  }
+
+  .wa-tabs {
+    display: flex;
+    background: #075e54;
+  }
+
+  .wa-tab {
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 3px solid transparent;
+  }
+
+  .wa-tab.active {
+    color: white;
+    border-bottom: 3px solid white;
+  }
+
+  .wa-tab:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar {
+    background: #075e54; /* WhatsApp green */
+    color: white;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .navbar-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    cursor: pointer;
+  }
+
+  .nav-icon:hover {
+    opacity: 0.8;
+  }
+  body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  color: #e91e63;
+}
+
+header p {
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px 40px;
+}
+
+.product {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-4px);
+}
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.product h3 {
+  font-size: 16px;
+  margin: 10px 0 4px;
+  color: #333;
+}
+
+.product .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e91e63;
+  margin: 0 0 10px;
+}
+
+.orderBtn {
+  display: inline-block;
+  background:  #CD5D5D;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  box-sizing: border-box;
+}
+.btn{
+  display: inline-block;
+  background:  #25D366;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  box-sizing: border-box;
+}
+.orderBtn:hover {
+  background: #25D366;
+}
+
+/* Floating WhatsApp button */
+.floating-wa {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.floating-wa svg {
+  width: 28px;
+  height: 28px;
+}
+
+footer {
+  background: #fff;
+  padding: 25px 20px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer-content h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.whatsapp-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #25D366;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.copyright {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #999;
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product img {
+    height: 140px;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div style="padding: 20px;">
+  </div>
+  <script>
+    // Your WhatsApp number in international format without +
+const WHATSAPP_NUMBER = "2348162614919";
+
+// Product list - edit this to add/remove products
+const products = [
+  { name: "", price: "5000", image: "perfume (2).jpg" },
+  { name: "", price: "9000", image: "Coffee.jpg" },
+  { name: "", price: "7500", image: "tomato.jpg" },
+  { name: "", price: "8000", image: "pixel.jpg" },
+  { name: "", price: "5000", image: "soap.jpg" },
+  { name: "", price: "6000", image: "pills.jpg" },
+  { name: "", price: "6500", image: "consignment.jpg" },
+  { name: "", price: "8000", image: "pink.jpg" },
+  { name: "", price: "5000", image: "candy.jpg" },
+  { name: "", price: "5500", image: "candle.jpg" },
+  { name: "", price: "6000", image: "dot.jpg" },
+  { name: "", price: "5000", image: "flick.jpg" },
+  { name: "", price: "4000", image: "give.jpg" },
+  { name: "", price: "6000", image: "good.jpg" },
+  { name: "", price: "4000", image: "lips.jpg" },
+  { name: "", price: "8000", image: "lip.jpg" },
+  { name: "", price: "6000", image: "site.jpg" },
+  { name: "", price: "9000", image: "bottle.jpg" },
+  { name: "", price: "5000", image: "cool.jpg" },
+  { name: "", price: "5000", image: "Airtel.jpg" },
+  { name: "", price: "5000", image: "glow.jpg" },
+  { name: "", price: "4000", image: "cactus.jpg" },
+  { name: "", price: "5000", image: "dove.jpg" }
+];
+
+// Function to create product cards
+function renderProducts() {
+  const container = document.getElementById('product-container');
+  
+  products.forEach(product => {
+    const message = `Hi I want to order ${product.name} - ₦${product.price}`;
+    const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    
+    const productHTML = `
+      <div class="product">
+        <img src="${product.image}" alt="${product.name}">
+        <h3>${product.name}</h3>
+        <p class="price">₦${product.price}</p>
+        <a href="${whatsappLink}" class="orderBtn" target="_blank">Order on WhatsApp</a>
+      </div>
+    `;
+    
+    container.innerHTML += productHTML;
+  });
+}
+
+// Run when page loads
+document.addEventListener('DOMContentLoaded', renderProducts);
+  </script>
+
+</body>
+</html>
